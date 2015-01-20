@@ -1,3 +1,19 @@
+.grouik{
+display:block;
+padding-left:15px;
+border-color : pink;
+background: white;
+
+}
+
+.patate{
+display:block;
+}
+
+.bibou{
+display:block;
+width:800px;
+}
 @media print{
   * html .pageminwidth{
     padding-left: 0;
