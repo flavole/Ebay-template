@@ -1,3 +1,58 @@
+.frais{
+position: absolute;
+left:648px;
+top:349px;
+}
+
+.icon6{
+position: absolute;
+left:423px;
+top:1922px;
+}
+
+.icon5{
+position: absolute;
+left:14px;
+top:1922px;
+}
+
+.icon4{
+position: absolute;
+left:14px;
+top:1682px;
+}
+
+.icon3{
+position: absolute;
+left:423px;
+top:1584px;
+}
+
+.icon2{
+position: absolute;
+left:14px;
+top:1584px;
+}
+
+.icon1
+{
+position: absolute;
+left:14px;
+top:343px;
+}
+.box{
+position:relative;
+}
+.iconfr{
+position: absolute;
+right:20px;
+top:310px;
+
+}
+.foot1{
+vertical-align: bottom;
+}
+
 .secu{
 vertical-align: bottom;
 }
