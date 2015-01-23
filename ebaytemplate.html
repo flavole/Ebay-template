@@ -887,6 +887,94 @@ font.TITLE {font: 9pt/12pt verdana; color: #028BC3; font-weight: bold}
 
 
 <tr> 
+	<div class="banner">
+			<ul>
+				<li style="background-image: url('image/backgroundslide.png');">
+					<h1></h1>
+					<p>"Bonsoir, je tenais à vous faire savoir tout le bien que je pense de votre société. (...)" Philippe Morlat, Paris.</p>
+					
+					<a class="btn" href="#download">Download</a>
+				</li>
+				
+				<li style="background-image: url('image/backgroundslide.png');">
+					<h1></h1>
+					<p>"Un peu septique au début, je me suis laissé séduire. Finalement je suis satisfait de mon achat. (...)"
+André, Aix-les-Bains</p>
+					
+					<a class="btn" href="#download">Download</a>
+				</li>
+				
+				<li style="background-image: url('image/backgroundslide.png');">
+					<h1></h1>
+					<p>
+    "Super, reçu en 4 jours, très bonne qualité. Merci"
+    Thierry, Montpellier</p>
+					
+					<a class="btn" href="//github.com/idiot/unslider">Contribute</a>
+				</li>
+				
+				<li style="background-image: url('image/backgroundslide.png');">
+					<h1></h1>
+					<p>I just wanted to show you another slide.</p>
+					
+					<a class="btn" href="#download">Download</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<div id="download" class="wrap footer">
+			<a class="btn" href="/unslider.min.js">Download <span>minified (2.6k)</span></a>
+			<a class="btn" href="/unslider.js">Download <span>source (5.1k)</span></a>
+			<br>
+			<a href="//twitter.com/idiot">@idiot</a> &mdash; <a href="//github.com/idiot/unslider">Github</a>
+		</div>
+		
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script src="/js/jquery.event.move.js"></script>
+		<script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+			
+		<script src="http://unslider.com/unslider.min.js"></script>
+		<script>
+			if(window.chrome) {
+				$('.banner li').css('background-size', '100% 100%');
+			}
+			
+			$('.banner').unslider({
+				fluid: true,
+				dots: true,
+				speed: 500
+			});
+		
+			//  Find any element starting with a # in the URL
+			//  And listen to any click events it fires
+			$('a[href^="#"]').click(function() {
+				//  Find the target element
+				var target = $($(this).attr('href'));
+				
+				//  And get its position
+				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+				
+				//  jQuery will return false if there's no element
+				//  and your code will throw errors if it tries to do .offset().left;
+				if(pos) {
+					//  Scroll the page
+					$('html, body').animate({
+						scrollTop: pos.top,
+						scrollLeft: pos.left
+					}, 1000);
+				}
+				
+				//  Don't let them visit the url, we'll scroll you there
+				return false;
+			});
+			
+			var GoSquared = {acct: 'GSN-396664-U'};
+		</script>
+		<script src="//d1l6p2sc9645hc.cloudfront.net/tracker.js"></script>
 <td><img src="image/secu.png" height="250" width="847" border="0" class="secu"> <img src="image/frais.png" height="149" width="175" border="0" class="frais"></td></tr>
 
 <tr>
