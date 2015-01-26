@@ -1,9 +1,25 @@
+img{
+display: block;
+}
+
+p{
+margin:0;}
+
+#mainpage{
+background: transparent url('image/back.png') repeat-y scroll center 50%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; width: auto;"
+
+}
+
+
+.para{
+text-align: justify;
+}
 
 
 .banavis{
 position: absolute;
-top: 100px;
-left:-86px;
+top: 85px;
+left:-7px;
 }
 
 
@@ -11,9 +27,11 @@ left:-86px;
 width: 730px;
    border: 1px solid black;
    text-align: justify;
-   padding: 8px;
+   padding: 10px;
    margin: 5px;
    margin-top:30px;
+   margin-left:15px;
+   
    overflow: scroll;
    height:220px;
 
@@ -22,24 +40,30 @@ width: 730px;
 
 .picture1{
 position: absolute;
-left:500px;
-top:2678px;
+left:460px;
+top:94.4%;
 }
 .picture2{
 position: absolute;
-left:600px;
-top:2678px;
+left:579px;
+top:94.4%;
 }
 .picture3{
 position: absolute;
 left:700px;
-top:2678px;
+top:94.4%;
+}
+
+.avis2{
+position: absolute;
+right:106px;
+top:74%;
 }
 
 .avis{
 position: absolute;
-right:112px;
-top:2005px;
+right:106px;
+top:71.5%;
 }
 
 .frais{
@@ -51,31 +75,31 @@ top:539px;
 .icon6{
 position: absolute;
 left:423px;
-top:2578px;
+top:91.38%;
 }
 
 .icon5{
 position: absolute;
 left:13px;
-top:2578px;
+top:91.38%;
 }
 
 .icon4{
 position: absolute;
 left:13px;
-top:2152px;
+top:76.25%;
 }
 
 .icon3{
 position: absolute;
 left:423px;
-top:1778px;
+top:63.17%;
 }
 
 .icon2{
 position: absolute;
-left:13px;
-top:1778px;
+left:1.8%;
+top:63.17%;
 }
 
 .icon1
@@ -90,7 +114,7 @@ position:relative;
 .iconfr{
 position: absolute;
 right:20px;
-top:310px;
+top:60%;
 
 }
 .foot1{
@@ -104,19 +128,23 @@ vertical-align: bottom;
 vertical-align: bottom;
 }
 .downother{
-vertical-align: bottom;
+display: block;
+vertical-align: middle;
 }
 .downcdv{
-vertical-align: bottom;
+display: block;
+vertical-align: middle;
 }
 .headersend{
-vertical-align: bottom;
+display: block;
+vertical-align: middle;
 }
 .head1{
 vertical-align: bottom;
 }
 .headerbuy{
-vertical-align: bottom;
+display: block;
+vertical-align: middle;
  }
 
 .grouik{
@@ -128,14 +156,8 @@ border-color : black;
 
 }
 
-.patate{
-display:block;
-}
 
-.bibou{
-display:block;
-width:800px;
-}
+
 @media print{
   * html .pageminwidth{
     padding-left: 0;
